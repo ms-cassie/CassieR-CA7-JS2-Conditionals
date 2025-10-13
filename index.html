@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="author" content="Cassie Robertson">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Bear Hunter Ninja</title>
+</head>
+<body>
+
+	<p id="game-dialog"></p>
+
+	<script type="text/javascript">
+		// Get player name and alert
+		const playerName = prompt("Welcome to Bear Hunter Ninja! Please enter your name to get started:");
+		alert(`Hi ${playerName} Let's play!!`);
+
+		// Get player choice & set computer choice
+		const playerChoice = prompt("Who are you: Bear, Ninja, or Hunter?");
+		const computerChoice = "Bear";
+
+		// Get p element and update inner text for game results
+		const gameDialog = document.getElementById("game-dialog");
+		gameDialog.innerText = `${playerName}, You picked ${playerChoice}!\n\nThe computer picked ${computerChoice}!`;
+
+		// Print the game output to the console
+		console.log(`${playerName}, You picked ${playerChoice}!`);
+		console.log(`The computer picked ${computerChoice}!`);
+	</script>
+</body>
+</html>
