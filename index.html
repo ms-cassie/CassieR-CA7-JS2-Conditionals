@@ -21,7 +21,7 @@
 
 		// Get player choice & set computer choice
 		const playerChoice = prompt("Who are you: Bear, Ninja, or Hunter?");
-		const computerChoice = "bear";
+		const computerChoice = "Bear";
 
 		// Print the game output to the console
 		console.log(`${playerName}, You picked ${playerChoice}!`);
@@ -31,9 +31,7 @@
 		// Bear beats Ninja, Ninja beats Hunter, and Hunter beats Bear
 		switch (playerChoice) {
 			case 'bear':
-				if (computerChoice === 'bear') {
-					winner = 'tie';
-				}else if (computerChoice === 'ninja') {
+				if (computerChoice === 'ninja') {
 					winner = 'computer';
 				}else if (computerChoice === 'hunter') {
 					winner = 'player';
@@ -45,16 +43,12 @@
 					winner = 'player';
 				}else if (computerChoice === 'ninja') {
 					winner = 'computer';
-				}else if (computerChoice === 'hunter') {
-					winner = 'tie';
 				}
 
 				break;
 			case 'ninja':
 				if (computerChoice === 'bear') {
 					winner = 'computer';
-				}else if (computerChoice === 'ninja') {
-					winner = 'tie';
 				}else if (computerChoice === 'hunter') {
 					winner = 'player';
 				}
